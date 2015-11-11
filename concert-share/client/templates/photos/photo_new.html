@@ -1,0 +1,32 @@
+<template name="photoNew">
+	<div>
+	  <h2>Snap a photo or upload your pic!</h2>
+
+	  {{> cameraEvent}}
+	  {{> libraryEvent}}
+	  {{> img}}
+	</div>
+</template>
+<template name="cameraEvent">
+  <div>
+    <p>Camera</p>
+    <button>Click Me</button>
+  </div>
+</template>
+
+<template name="libraryEvent">
+  <div>
+    <p>Library</p>
+    <button>Click Me</button>
+  </div>
+</template>
+
+<template name="img">
+  <div>
+    {{#if img}}
+      <img src="{{img}}" alt="">
+    {{else}}
+      <p>No image yet.</p>
+    {{/if}}
+  </div>
+</template>

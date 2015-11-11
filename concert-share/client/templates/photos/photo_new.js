@@ -1,4 +1,4 @@
-if (Meteor.isClient) {
+// if (Meteor.isClient) {
   Session.setDefault('img', null);
 
   var getPicture = function(opts) {
@@ -7,7 +7,14 @@ if (Meteor.isClient) {
         console.log('error', err);
       }
       if (data) {
-        Session.set('img', data)
+        Session.set('img', data);
+        console.log(data);
+		var post = {
+			image: data,
+		};
+
+		post._id = Posts.insert(post);
+		Router.go('postPage', post);
       }
     });
   };
@@ -19,7 +26,8 @@ if (Meteor.isClient) {
         height: 200,
         quality: 75
       });
-    }
+    },
+
   });
 
   Template.libraryEvent.events({
@@ -42,4 +50,4 @@ if (Meteor.isClient) {
       return Session.get('img');
     }
   });
-}
+// }

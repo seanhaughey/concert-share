@@ -5,10 +5,22 @@
 			<h4>{{title}}</h4>
 			<p>
 				submitted by {{author}}
-				{{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}
 			</p>
 		</div>
-		<a href="{{pathFor 'postPage'}}" class="discuss btn btn-default">Comment</a
-		>
 	</div>
+	{{#if ownPost}}<form class="photo-info">
+		<div>
+			<label>Venue</label>
+			<input name="venue" id="venue" type="text" value="" placeholder="Enter the venue here"/>
+		</div>
+		<div>
+			<label>Artist</label>
+			<input name="artist" id="artist" type="text" value="" placeholder="Enter artist name here"/>
+		</div>
+		<div>
+			<label>Comments</label>
+			<input name="owner-comments" id="owner-comment" type="text" value="" placeholder="Say what?"/>
+		</div>
+
+	</form>{{/if}}
 </template>

@@ -14,6 +14,11 @@ Router.route('/posts/:_id', {
 	data: function() { return Posts.findOne(this.params._id); }
 });
 
+Router.route('/photo_info/:_id', {
+	name: 'photoInfo',
+	data: function() {return Posts.findOne(this.params._id); }
+});
+
 Router.route('/submit', {name: 'postSubmit'});
 
 var requireLogin = function() {

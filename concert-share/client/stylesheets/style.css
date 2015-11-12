@@ -2,3 +2,19 @@
 	height: 200px;
 	width: auto;
 }
+
+#nav-header {
+	height: 100px;
+	margin: 1px;
+}
+
+#logo {
+	border: 0px;
+	height: 80px;
+	width: auto;
+}
+
+#camera {
+	height: 80px;
+	width: auto;
+}

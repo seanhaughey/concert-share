@@ -8,7 +8,6 @@
       }
       if (data) {
         Session.set('img', data);
-        console.log(data);
     var post = {
       image: data,
       author: Meteor.user().username,
@@ -17,7 +16,7 @@
     };
 
     post._id = Posts.insert(post);
-    Router.go('postPage', post);
+    Router.go('photoInfo', post);
       }
     });
   };

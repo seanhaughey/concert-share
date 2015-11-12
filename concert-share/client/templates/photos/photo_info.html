@@ -1,0 +1,24 @@
+<template name="photoInfo">
+	<div class="post-content">
+		<h3><img src="{{image}}" id="post-image"></h3>
+		<p>
+			submitted by {{author}}
+		</p>
+	</div>
+	{{#if ownPost}}<form class="photo-info">
+		<div>
+			<label class="control-label" for="venue">Venue</label>
+			<input name="venue" id="venue" type="text" value="" placeholder="Enter the venue here"/>
+		</div>
+		<div>
+			<label class="control-label" for="artist">Artist</label>
+			<input name="artist" id="artist" type="text" value="" placeholder="Enter artist name here"/>
+		</div>
+		<div>
+			<label class="control-label" for="comments">Comments</label>
+			<input name="owner-comments" id="owner-comment" type="text" value="" placeholder="Say what?"/>
+			<input type="hidden" name="post-id" id="post-id" value="{{_id}}" />
+		</div>
+		<button>Submit</button>
+	</form>{{/if}}
+</template>

@@ -9,12 +9,15 @@
       if (data) {
         Session.set('img', data);
         console.log(data);
-		var post = {
-			image: data,
-		};
+    var post = {
+      image: data,
+      author: Meteor.user().username,
+      userId: Meteor.user()._id,
+      submitted: new Date()
+    };
 
-		post._id = Posts.insert(post);
-		Router.go('postPage', post);
+    post._id = Posts.insert(post);
+    Router.go('postPage', post);
       }
     });
   };
@@ -34,8 +37,8 @@
     'click button': function () {
       if (Meteor.isCordova) {
         getPicture({
-          width: 350,
-          height: 350,
+          width: 200,
+          height: 200,
           quality: 75,
           sourceType: Camera.PictureSourceType.PHOTOLIBRARY
         });
@@ -50,4 +53,3 @@
       return Session.get('img');
     }
   });
-// }

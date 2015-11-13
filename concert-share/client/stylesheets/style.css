@@ -54,6 +54,24 @@
 	border: 0px;
 }
 
+textarea {
+	width: 100px;
+	height: 100px;
+}
+
 button {
 	border-radius: 50%;
+}
+
+.author {
+	font-weight: bold;
+}
+
+.comment-info {
+	list-style: none;
+	text-align: center;
+}
+
+#comment-body {
+	font-style: italic;
 }

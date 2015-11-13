@@ -15,6 +15,8 @@ Meteor.methods({
 			author: user.username,
 			submitted: new Date()
 		});
-		return Comments.insert(comment); 
+		comment._id = Comments.insert(comment);
+		createCommentNotification(comment);
+		return comment._id; 
 	}
 });

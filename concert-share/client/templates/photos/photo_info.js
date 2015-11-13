@@ -11,7 +11,7 @@ Template.photoInfo.events({
 		console.log(post);
 		console.log($("#post-id").val());
 		Posts.update({_id: $("#post-id").val()}, {$set: post});
-		// Router.go('postsList');
+		Session.setDefault('img', null);
 		Meteor.defer(function(){Router.go('postsList')});
 		return false;
 	}

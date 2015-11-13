@@ -1,11 +1,40 @@
+#header {
+	margin: 0px;
+	border: 0px;
+}
+
+#layout-body {
+	margin: 0px 0px 0px 0px;
+	border: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+.dropdown-toggle {
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+}
+
 #post-image {
-	height: 200px;
-	width: auto;
+	height: auto;
+	width: 300px;
+	border: 0px;
+}
+
+#artist {
+	border: 0px;
+	font-family: 'New Rocker', cursive;
+}
+
+#venue {
+	border: 0px;
 }
 
 #nav-header {
 	height: 100px;
-	margin: 1px;
+	background-color: #6b6666;
+	margin: 0px;
+	border: 0px;
 }
 
 #logo {
@@ -15,6 +44,16 @@
 }
 
 #camera {
-	height: 80px;
+	margin-left: 50px;
+	height: 70px;
 	width: auto;
+}
+
+#author {
+	margin: 0px;
+	border: 0px;
+}
+
+button {
+	border-radius: 50%;
 }

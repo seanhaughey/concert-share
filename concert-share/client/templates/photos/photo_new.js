@@ -1,4 +1,3 @@
-// if (Meteor.isClient) {
   Session.setDefault('img', null);
 
   var getPicture = function(opts) {
@@ -16,6 +15,7 @@
     };
 
     post._id = Posts.insert(post);
+    Session.set('img', null);
     Router.go('photoInfo', post);
       }
     });

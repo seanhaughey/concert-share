@@ -1,12 +1,16 @@
 <template name="postItem">
-	<div class="post">
+	<div class="row">
 		<div class="post-content">
-			<h3><img src="{{image}}" id="post-image"></h3>
-			<h3>{{artist}}</h3>
-			<h4>at {{venue}}</h4>
-			<p>
-				Photo by {{author}}
-			</p>
+			<div class="col-md-4"></div>
+			<div class="col-md-4 text-center">
+				<h3 id="artist">{{artist}}</h3>
+				<h4 id="venue">at {{venue}}</h4>
+				<h3><img src="{{image}}" id="post-image"></h3>
+				<p id="author">
+					Photo by {{author}}
+				</p>
+				<h5>{{author}} says: {{ownerComment}}</h5>
+			</div>
 		</div>
 	</div>
 </template>

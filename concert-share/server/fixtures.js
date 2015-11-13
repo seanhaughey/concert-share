@@ -1,20 +1,20 @@
 if (Posts.find().count() === 0) {
 	Posts.insert({
-		image: 'http://www.ks95.com/wp-content/uploads/2014/04/94130125.jpg',
+		image: 'images/bob_log.jpg',
 		author: 'sdhaughey',
-		artist: 'Motley Crue',
-		venue: 'Frank Irwin Center'
+		artist: 'Bob Log III',
+		venue: 'Mohawk'
 	});
 	Posts.insert({
-		image: 'http://orig05.deviantart.net/f20c/f/2010/133/f/3/concert_green_by_kristof_clg.jpg',
+		image: 'images/black_pistol_fire.jpg',
 		author: 'sdhaughey',
-		artist: 'Imagine Dragons',
-		venue: 'Moody Theater'
+		artist: 'Black Pistol Fire',
+		venue: 'The Scoot Inn'
 	});
 	Posts.insert({
-		image: 'http://exclaim.ca/images/up-5flaming_lips.jpg',
+		image: 'images/widespread_panic.jpg',
 		author: 'sdhaughey',
-		artist: 'Flaming Lips',
-		venue: 'Jannus Landing'
+		artist: 'Widespread Panic',
+		venue: 'ACL Live'
 	});
 }

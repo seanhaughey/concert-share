@@ -20,4 +20,11 @@ if (Posts.find().count() === 0) {
 		venue: 'ACL Live',
 		ownerComment: "Amazing light show!"
 	});
+	Posts.insert({
+		image: 'images/dulli.jpg',
+		author: 'sdhaughey',
+		artist: 'Afghan Whigs',
+		venue: "Antone's",
+		ownerComment: "Dulli serenading the crowd!"
+	});
 }

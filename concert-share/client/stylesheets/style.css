@@ -17,7 +17,7 @@
 
 #post-image {
 	height: auto;
-	width: 300px;
+	width: 400px;
 	border: 0px;
 }
 
@@ -35,6 +35,10 @@
 	background-color: #6b6666;
 	margin: 0px;
 	border: 0px;
+}
+
+#notifications {
+	color: black;
 }
 
 #logo {
@@ -65,6 +69,10 @@ button {
 
 .author {
 	font-weight: bold;
+}
+
+.dropdown {
+	list-style: none;
 }
 
 .comment-info {

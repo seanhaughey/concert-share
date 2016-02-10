@@ -26,7 +26,7 @@
       getPicture({
         width: 200,
         height: 200,
-        quality: 75
+        quality: 100
       });
     },
 

@@ -56,6 +56,7 @@ livedata@1.0.15
 localstorage@1.0.5
 logging@1.0.8
 mdg:camera@1.2.0
+mdg:geolocation@1.1.0
 meteor@1.1.10
 meteor-base@1.0.1
 minifiers@1.1.7
@@ -96,3 +97,4 @@ underscore@1.0.4
 url@1.0.5
 webapp@1.2.3
 webapp-hashing@1.0.5
+zeroasterisk:cordova-geolocation-background@0.0.7

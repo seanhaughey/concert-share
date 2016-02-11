@@ -9,6 +9,7 @@ Template.photoInfo.events({
 			ownerComment: $("#owner-comment").val()
 		};
 		console.log(post);
+		console.log($("#location").val());
 		console.log($("#post-id").val());
 		Posts.update({_id: $("#post-id").val()}, {$set: post});
 		Session.setDefault('img', null);

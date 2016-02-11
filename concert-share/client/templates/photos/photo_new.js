@@ -1,4 +1,10 @@
   Session.setDefault('img', null);
+  Meteor.startup(function () {
+    Tracker.autorun(function () {
+      var geo = Geolocation.currentLocation();
+      Session.set('geo', geo);
+    }); 
+  });
 
   var getPicture = function(opts) {
     MeteorCamera.getPicture(opts, function(err, data) {
@@ -11,7 +17,8 @@
       image: data,
       author: Meteor.user().username,
       userId: Meteor.user()._id,
-      submitted: new Date()
+      submitted: new Date(),
+      location: Geolocation.latLng()
     };
 
     post._id = Posts.insert(post);

@@ -9,8 +9,35 @@
 	</div>
 	{{#if ownPost}}<form class="photo-info">
 		<div>
-			<label class="control-label" for="venue">Venue</label>
-			<input name="venue" id="venue" type="text" value="" placeholder="Enter the venue here"/>
+			<!-- Trigger the modal with a button -->
+			<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#venue-choice">Choose Venue</button>
+
+			<!-- Modal -->
+			<div id="venue-choice" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+			    <!-- Modal content-->
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal">&times;</button>
+			        <h4 class="modal-title">Choose Your Venue</h4>
+			      </div>
+			      <div class="modal-body">
+			        <label class="control-label" for="venue">Venue</label>
+			        <div id="fourSquare"></div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+<!-- 			<input name="venue" id="venue" type="text" value="" placeholder="Enter the venue here"/> -->
+		
+		</div>
+		<div>
+			<label class="control-label" for="artist">Venue</label>
+			<input name="venue" id="venue" type="text" value="" placeholder="Select venue above"/>
 		</div>
 		<div>
 			<label class="control-label" for="artist">Artist</label>
@@ -20,9 +47,11 @@
 			<label class="control-label" for="comments">Comments</label>
 			<input name="owner-comments" id="owner-comment" type="text" value="" placeholder="Say what?"/>
 			<input type="hidden" name="post-id" id="post-id" value="{{_id}}" />
-			<input type="hidden" name="location" id="location" value="{{location}}"/>
+			<input type="hidden" name="location" id="location" value="{{venue}}"/>
 		</div>
-		<button>Submit</button>
+		<div>
+		<button id="submit-photo">Submit</button>
+		</div>
 	</form>{{/if}}
 	</div>
 </template>

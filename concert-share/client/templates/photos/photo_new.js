@@ -32,7 +32,7 @@ var getPicture = function(opts) {
       for (var i = 0; i < 5; i++) {
         console.log(data);
         console.log(data['response']['venues'][i]['id']);
-        $("#fourSquare").append("<li>" + "<a href='' class='venue-submit' id='" + i + "' value='" + data['response']['venues'][i]['name'] + "' >" + data['response']['venues'][i]['name'] + "</a>" + "</li>");
+        $('#fourSquare').append('<li>' + '<a href="" class="venue-submit" data-dismiss="modal" id="' + i + '" value="' + data["response"]["venues"][i]["name"] + '" >' + data["response"]["venues"][i]["name"] + '</a>' + '</li>');
       };
     },
     error: function (xhr, textStatus, errorThrown) {

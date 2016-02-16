@@ -5,23 +5,27 @@ Template.photoInfo.events({
 		// var venue = $('#0').attr('value');
 		// console.log(venue);
 		post.venue = $('#0').attr('value');
-		console.log(post);
+		$('#venue-label').append("<p id='post-venue'>" + post.venue + "</p>")
 	},
 
 	'click #1': function() {
 		post.venue = $('#1').attr('value');
+		$('#venue-label').append("<p id='post-venue'>" + post.venue + "</p>")
 	},
 
 	'click #2': function() {
 		post.venue = $('#2').attr('value');
+		$('#venue-label').append("<p id='post-venue'>" + post.venue + "</p>")
 	},
 
 	'click #3': function() {
 		post.venue = $('#3').attr('value');
+		$('#venue-label').append("<p id='post-venue'>" + post.venue + "</p>")
 	},
 
 	'click #4': function() {
 		post.venue = $('#4').attr('value');
+		$('#venue-label').append("<p id='post-venue'>" + post.venue + "</p>")
 	},			
 
 	'click #submit-photo': function() {

@@ -10,7 +10,7 @@
 	{{#if ownPost}}<form class="photo-info">
 		<div>
 			<!-- Trigger the modal with a button -->
-			<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#venue-choice">Choose Venue</button>
+			<button id="venue-button" type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#venue-choice">Where Are You?</button>
 
 			<!-- Modal -->
 			<div id="venue-choice" class="modal fade" role="dialog">
@@ -35,11 +35,11 @@
 <!-- 			<input name="venue" id="venue" type="text" value="" placeholder="Enter the venue here"/> -->
 		
 		</div>
-<!-- 		<div>
+		<div>
 			<label class="control-label" for="artist">Venue</label>
-			<input name="venue" id="venue" type="text" value="" placeholder="Select venue above"/>
+			<div id="venue-label"></div>
 		</div>
- -->		<div>
+		<div>
 			<label class="control-label" for="artist">Artist</label>
 			<input name="artist" id="artist" type="text" value="" placeholder="Enter artist name here"/>
 		</div>

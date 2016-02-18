@@ -26,16 +26,26 @@
 	font-family: 'New Rocker', cursive;
 }
 
+.venue-list {
+	list-style: none;
+}
+
+.modal-footer {
+	text-align: center;
+}
+
 #venue {
 	border: 0px;
+	font-family: 'Monda', sans-serif;
 }
 
 .venue-submit {
-	font-family: 'New Rocker', cursive;
+	font-family: 'Monda', sans-serif;
+	font-size: 20px;
 }
 
 #post-venue {
-	font-family: 'New Rocker', cursive;
+	font-family: 'Monda', sans-serif;
 }
 
 #nav-header {

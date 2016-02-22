@@ -15,7 +15,18 @@
 	font-weight: bold;
 }
 
-#post-image {
+#nav-buttons {
+	margin-left: 52px;
+}
+
+#ci-button {
+	background-color: #6b6666;
+	border: none;
+	margin-top: 12px;
+	outline: none;
+}
+
+.post-image {
 	height: auto;
 	width: 400px;
 	border: 0px;
@@ -55,13 +66,30 @@
 	border: 0px;
 }
 
+#bell {
+	border: 0px;
+	height: 40px;
+	width: auto;
+}
+
 #notifications {
 	color: black;
 }
 
+#login-dropdown-list a {
+    color: black;
+}
+
 #logo {
+	margin-top: -5px;
 	border: 0px;
 	height: 80px;
+	width: auto;
+}
+
+#checkin {
+	border: 0px;
+	height: 50px;
 	width: auto;
 }
 
@@ -81,7 +109,7 @@ textarea {
 	height: 100px;
 }
 
-button {
+.photo {
 	border-radius: 50%;
 }
 

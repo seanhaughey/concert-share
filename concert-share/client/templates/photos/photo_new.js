@@ -30,7 +30,7 @@ var getPicture = function(opts) {
     data: '',
     success: function (data, textStatus, xhr) {
       $('#fourSquare').html('');
-      for (var i = 0; i < 5; i++) {
+      for (var i = 0; i < 10; i++) {
         console.log(data);
         console.log(data['response']['venues'][i]['id']);
         $('#fourSquare').append('<li class="venue-list">' + '<a href="" class="venue-submit" data-dismiss="modal" id="' + i + '" value="' + data["response"]["venues"][i]["name"] + '" >' + data["response"]["venues"][i]["name"] + '</a>' + '</li>');
@@ -64,7 +64,7 @@ Template.libraryEvent.events({
       getPicture({
         width: 200,
         height: 200,
-        quality: 75,
+        quality: 100,
         sourceType: Camera.PictureSourceType.PHOTOLIBRARY
       });
 

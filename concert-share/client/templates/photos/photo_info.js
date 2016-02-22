@@ -1,9 +1,9 @@
 
 var post = {};
 Template.photoInfo.events({
-	'click .venue-submit': function(event) {
-		console.log($(event.target));
-		post.venue = $(event.target).attr('value');
+	'click .venue-submit': function(e) {
+		console.log($(e.target));
+		post.venue = $(e.target).attr('value');
 		$('#venue-label').append("<p id='post-venue'>" + post.venue + "</p>")
 	},
 
